@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root {
+    --primary-purple: hsl(259, 100%, 65%);
+    --primary-lightred: hsl(0, 100%, 67%);
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-Off-white: hsl(0, 0%, 94%);
+    --neutral-Light-grey: hsl(0, 0%, 86%);
+    --neutral-Smokey-grey: hsl(0, 1%, 44%);
+    --neutral-Off-black: hsl(0, 0%, 8%);
+    --font-size: 32px;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* font-size: var(--font-size); */
+    background-color: var(--neutral-Light-grey);
+}
+
+.container {
+    width: 600px;
+    background-color: var(--neutral-White);
+    border-radius: 1rem 1rem 10rem 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.input-block {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.age {
+    display: flex;
+    flex-direction: column;
+}
+
+.block label {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+input {
+    width: 108px;
+    padding: .5rem;
+    font-size: 1.5rem;
+    border: 1px solid var(--neutral-Light-grey);
+    border-radius: .3rem;
+}
+
+input::placeholder {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.smlp {
+    padding-top: 5px;
+    color: rgb(241, 86, 86);
+}
+
+.submit-block {
+    display: flex;
+    align-items: center;
+
+}
+
+.submit-block hr {
+    width: 100%;
+    border-color: var(--neutral-Light-grey);
+}
+
+.submit-block .submit-btn {
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: var(--primary-purple);
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.submit-btn:active {
+    background-color: var(--neutral-Off-black);
+}
+
+.output h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.output span {
+    margin-right: 10px;
+    color: var(--primary-purple);
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 380px;
+        border-radius: 1rem 1rem 7rem 1rem;
+    }
+
+    .input-block {
+        justify-content: space-between;
+        gap: 0;
+        margin-bottom: 4rem;
+    }
+
+    input {
+        width: 95px;
+    }
+
+    .submit-block {
+        position: relative;
+    }
+
+
+    .submit-block .submit-btn {
+        position: absolute;
+        left: 37%;
+    }
+
+    .output {
+        padding: 3rem .3rem .2rem .3rem;
+    }
+
+    .output h1 {
+        font-size: 3.5rem;
+        font-weight: 800;
+        font-style: italic;
+    }
+
+}
