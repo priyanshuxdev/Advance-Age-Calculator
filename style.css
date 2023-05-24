@@ -62,9 +62,34 @@ input {
     border-radius: .3rem;
 }
 
+.age.invalid label{
+    color: red;
+}
+
+.age.invalid input{
+    border-color: red;
+}
+
+input:focus{
+    outline: none;
+}
+
 input::placeholder {
     font-size: 1.5rem;
     font-weight: 800;
+}
+
+.age p{
+    font-size: 0.85rem;
+    padding-top: 0.25rem;
+    display: none;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.age.invalid p{
+    display: block;
+    color: red;
 }
 
 .smlp {
@@ -111,6 +136,7 @@ input::placeholder {
 }
 
 @media (max-width: 600px) {
+
     .container {
         width: 380px;
         border-radius: 1rem 1rem 7rem 1rem;
